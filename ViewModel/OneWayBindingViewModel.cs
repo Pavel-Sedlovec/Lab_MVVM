@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,19 +9,9 @@ using System.Threading.Tasks;
 
 namespace Lab_MVVM.ViewModel
 {
-    class OneWayBindingViewModel : INotifyPropertyChanged
+    public partial class OneWayBindingViewModel : ObservableObject
     {
-        public string _textOWB = "Начальный текст";
-        public string TextOWB
-        {
-            get { return _textOWB; }
-            set { _textOWB = value; OnPropertyChanged(); }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
-        }
+        [ObservableProperty]
+        private string _textOWB = "Начальный текст";
     }
 }

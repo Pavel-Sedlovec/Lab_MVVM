@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -7,13 +8,9 @@ using System.Threading.Tasks;
 
 namespace Lab_MVVM.ViewModel
 {
-    class OneTimeBindingViewModel
+    public partial class OneTimeBindingViewModel : ObservableObject
     {
-        public string _textOTB = "424";
-
-        public string TextOTB
-        {
-            get { return _textOTB; }
-        }
+        [ObservableProperty]
+        private string _textOTB = "424";
     }
 }
