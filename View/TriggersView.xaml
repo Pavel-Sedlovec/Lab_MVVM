@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="Lab_MVVM.View.TriggersView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Lab_MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="20">
+        <TextBlock Text="Демонстрация триггеров"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20" />
+
+        <GroupBox Header="1. Property Trigger (Наведение мыши)"
+                  Margin="0,0,0,10">
+            <Button Content="Наведи на меня!"
+                    Height="40"
+                    Margin="10">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background"
+                                Value="LightGray" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+                                <Setter Property="Background"
+                                        Value="LightGreen" />
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1"
+                                                        ScaleY="1.1" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </GroupBox>
+
+        <GroupBox Header="2. DataTrigger (Логика данных)"
+                  Margin="0,0,0,10">
+            <StackPanel Margin="10">
+                <CheckBox x:Name="AgreeCheck"
+                          Content="Я согласен с условиями" />
+                <TextBlock Text="Кнопка активна только при галочке"
+                           Margin="0,5,0,0"
+                           Opacity="0.5" />
+                <Button Content="Продолжить"
+                        Height="40">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="IsEnabled"
+                                    Value="False" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=AgreeCheck, Path=IsChecked}"
+                                             Value="True">
+                                    <Setter Property="IsEnabled"
+                                            Value="True" />
+                                    <Setter Property="Background"
+                                            Value="SkyBlue" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="3. EventTrigger (Анимация при загрузке)">
+            <Rectangle Width="50"
+                       Height="50"
+                       Fill="Orange"
+                       HorizontalAlignment="Left"
+                       Margin="10">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="Rectangle.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width"
+                                                 From="50"
+                                                 To="300"
+                                                 Duration="0:0:2"
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+        </GroupBox>
+    </StackPanel>
+</UserControl>
