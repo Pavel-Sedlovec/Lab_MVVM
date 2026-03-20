@@ -6,8 +6,14 @@
         xmlns:local="clr-namespace:Lab_MVVM.View"
         mc:Ignorable="d"        
         Title="MainWindow" Height="450" Width="800">
-    
+
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
         <TabControl>
             <TabItem Header="Привязка по умолчанию">
                 <local:DefaultBindingView />
@@ -30,5 +36,25 @@
             </TabItem>
 
         </TabControl>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="10,5"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Язык:"
+                       VerticalAlignment="Center"
+                       Margin="0,0,8,0"
+                       FontSize="14" />
+            <ComboBox x:Name="LanguageComboBox"
+                      Width="120"
+                      Height="30"
+                      SelectionChanged="LanguageComboBox_SelectionChanged">
+                <ComboBoxItem Content="Русский"
+                              Tag="ru" />
+                <ComboBoxItem Content="English"
+                              Tag="en" />
+            </ComboBox>
+        </StackPanel>
     </Grid>
 </Window>
