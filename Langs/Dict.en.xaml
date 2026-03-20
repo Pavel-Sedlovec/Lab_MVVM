@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+	<sys:String x:Key="t_Default">Default Binding</sys:String>
+	<sys:String x:Key="t_TwoWay">Two-Way</sys:String>
+	<sys:String x:Key="t_OneTime">One-Time</sys:String>
+	<sys:String x:Key="t_OneWay">One-Way</sys:String>
+	<sys:String x:Key="t_Triggers">Triggers</sys:String>
+	<sys:String x:Key="m_LangLabel">Language:</sys:String>
+	<sys:String x:Key="m_Welcome">Welcome!</sys:String>
+
+	<sys:String x:Key="m_Input">Type something:</sys:String>
+	<sys:String x:Key="m_ResultVM">Result in ViewModel:</sys:String>
+	<sys:String x:Key="m_Instruction">Instruction:</sys:String>
+
+	<sys:String x:Key="t_Def_Step1">1. Start typing in the gray field — the red text DOES NOT CHANGE.</sys:String>
+	<sys:String x:Key="t_Def_Step2">2. Press Tab or click anywhere else.</sys:String>
+	<sys:String x:Key="t_Def_Step3">3. Once TextBox loses focus — the red text updates!</sys:String>
+
+	<sys:String x:Key="t_TW_ElemTitle">Element-to-Element Binding</sys:String>
+	<sys:String x:Key="t_TW_ElemDesc">Move the slider — text changes, type numbers — slider moves.</sys:String>
+	<sys:String x:Key="t_TW_VMTitle">ViewModel Binding</sys:String>
+	<sys:String x:Key="t_TW_VMDesc">Data passes through C# code (ViewModel)</sys:String>
+
+	<sys:String x:Key="t_OT_Title">OneTime Binding</sys:String>
+	<sys:String x:Key="t_OT_Label">Text: </sys:String>
+	<sys:String x:Key="t_OT_Desc">This text loaded only once.</sys:String>
+
+	<sys:String x:Key="t_OW_Title">OneWay Binding (One direction)</sys:String>
+	<sys:String x:Key="t_OW_Source">Data Source (Changes C# variable):</sys:String>
+	<sys:String x:Key="t_OW_Target1">Target 1 (TextBlock):</sys:String>
+	<sys:String x:Key="t_OW_Target2">Target 2 (TextBox + Mode=OneWay):</sys:String>
+	<sys:String x:Key="t_OW_Instruction">TEST INSTRUCTION:&#x0a;1. Type in the top field — text changes everywhere.&#x0a;2. Try deleting text in the PINK field and type 'Hello'.&#x0a;3. Return to the top field and add one letter.&#x0a;4. You will see your 'Hello' in the pink field disappear as it reverts to the actual code value.</sys:String>
+
+	<sys:String x:Key="t_Trig_Title">Triggers Demo</sys:String>
+	<sys:String x:Key="t_Trig_PropHeader">1. Property Trigger (Mouse Hover)</sys:String>
+	<sys:String x:Key="t_Trig_ButtonHover">Hover over me!</sys:String>
+	<sys:String x:Key="t_Trig_DataHeader">2. DataTrigger (Data Logic)</sys:String>
+	<sys:String x:Key="t_Trig_CheckContent">I agree to terms</sys:String>
+	<sys:String x:Key="t_Trig_CheckDesc">Button is active only when checked</sys:String>
+	<sys:String x:Key="t_Trig_Continue">Continue</sys:String>
+	<sys:String x:Key="t_Trig_EventHeader">3. EventTrigger (Load Animation)</sys:String>
+</ResourceDictionary>

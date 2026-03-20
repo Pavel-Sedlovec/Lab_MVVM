@@ -7,26 +7,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="20">
-        <GroupBox Header="Привязка Элемент-Элемент"
+        <GroupBox Header="{DynamicResource t_TW_ElemTitle}"
                   Margin="0,0,0,20">
             <StackPanel>
                 <Slider Name="mySlider"
                         Minimum="0"
                         Maximum="100" />
-                <TextBox Text="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger = PropertyChanged}" />
-                <TextBlock Text="Двигай слайдер — текст меняется, пиши цифры — слайдер ползет."
+                <TextBox Text="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock Text="{DynamicResource t_TW_ElemDesc}"
                            TextWrapping="Wrap"
                            Opacity="0.5" />
             </StackPanel>
         </GroupBox>
-
-        <GroupBox Header="Привязка через ViewModel">
+        <GroupBox Header="{DynamicResource t_TW_VMTitle}">
             <StackPanel>
                 <TextBox Text="{Binding TextTWB, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBlock Text="{Binding TextTWB}"
                            Foreground="Blue"
                            FontSize="16" />
-                <TextBlock Text="Данные проходят через C# код (ViewModel)"
+                <TextBlock Text="{DynamicResource t_TW_VMDesc}"
                            Opacity="0.5" />
             </StackPanel>
         </GroupBox>

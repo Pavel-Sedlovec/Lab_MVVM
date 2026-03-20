@@ -15,23 +15,23 @@
         </Grid.RowDefinitions>
 
         <TabControl>
-            <TabItem Header="Привязка по умолчанию">
+            <TabItem Header="{DynamicResource t_Default}">
                 <local:DefaultBindingView />
             </TabItem>
 
-            <TabItem Header="Двухсторонняя привязка">
+            <TabItem Header="{DynamicResource t_TwoWay}">
                 <local:TwoWayBindingView />
             </TabItem>
 
-            <TabItem Header="Одноразовая привязка">
+            <TabItem Header="{DynamicResource t_OneTime}">
                 <local:OneTimeBindingView />
             </TabItem>
 
-            <TabItem Header="Односторонняя привязка">
+            <TabItem Header="{DynamicResource t_OneWay}">
                 <local:OneWayBindingView />
             </TabItem>
 
-            <TabItem Header="Триггеры">
+            <TabItem Header="{DynamicResource t_Triggers}">
                 <local:TriggersView />
             </TabItem>
 
@@ -39,19 +39,16 @@
 
         <StackPanel Grid.Row="1"
                     Orientation="Horizontal"
-                    HorizontalAlignment="Left"
-                    Margin="10,5"
-                    VerticalAlignment="Center">
-            <TextBlock Text="Язык:"
+                    Margin="10,5">
+            <TextBlock Text="{DynamicResource m_LangLabel}"
                        VerticalAlignment="Center"
-                       Margin="0,0,8,0"
-                       FontSize="14" />
+                       Margin="0,0,8,0" />
             <ComboBox x:Name="LanguageComboBox"
                       Width="120"
-                      Height="30"
                       SelectionChanged="LanguageComboBox_SelectionChanged">
                 <ComboBoxItem Content="Русский"
-                              Tag="ru" />
+                              Tag="ru"
+                              IsSelected="True" />
                 <ComboBoxItem Content="English"
                               Tag="en" />
             </ComboBox>

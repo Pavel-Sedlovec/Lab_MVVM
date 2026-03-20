@@ -7,27 +7,24 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Введите что-нибудь:" />
-
+        <TextBlock Text="{DynamicResource m_Input}" />
         <TextBox Text="{Binding TextDB}"
                  Margin="0,5"
                  Background="LightGray" />
 
-        <TextBlock Text="Результат во ViewModel:"
+        <TextBlock Text="{DynamicResource m_Result}"
                    Margin="0,10,0,0"
                    FontWeight="Bold" />
-        <TextBlock Text="{Binding TextDB }"
+        <TextBlock Text="{Binding TextDB}"
                    Foreground="Red"
                    FontSize="18" />
 
-        <TextBlock Text="Инструкция:"
+        <TextBlock Text="{DynamicResource m_Instruction}"
                    Margin="0,20,0,0"
                    Opacity="0.7" />
-        <TextBlock Text="1. Начни писать текст в сером поле — красный текст НЕ МЕНЯЕТСЯ."
+        <TextBlock Text="{DynamicResource t_Def_Step1}"
                    TextWrapping="Wrap" />
-        <TextBlock Text="2. Нажми клавишу Tab или кликни мышкой в любое другое место."
-                   TextWrapping="Wrap" />
-        <TextBlock Text="3. Как только TextBox потерял фокус — красный текст обновился!"
+        <TextBlock Text="{DynamicResource t_Def_Step2}"
                    TextWrapping="Wrap" />
     </StackPanel>
 </UserControl>
