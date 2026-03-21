@@ -9,6 +9,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources2\Localization\DefaultBinding.loc.json" />
+    <None Remove="Resources2\Localization\OneTimeBinding.loc.json" />
+    <None Remove="Resources2\Localization\OneWayBinding.loc.json" />
+    <None Remove="Resources2\Localization\TriggersView.loc.json" />
+    <None Remove="Resources2\Localization\TwoWayBinding.loc.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources2\Localization\DefaultBinding.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources2\Localization\MainWindow.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources2\Localization\OneTimeBinding.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources2\Localization\OneWayBinding.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources2\Localization\TriggersView.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources2\Localization\TwoWayBinding.loc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodingSeb.Localization" Version="1.4.0" />
+    <PackageReference Include="CodingSeb.Localization.JsonFileLoader" Version="1.4.0" />
+    <PackageReference Include="CodingSeb.Localization.WPF" Version="1.4.1" />
+    <PackageReference Include="CodingSebLocalization.Fody" Version="1.4.0" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="MaterialDesignThemes" Version="5.3.0" />
   </ItemGroup>

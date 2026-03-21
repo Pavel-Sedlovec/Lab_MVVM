@@ -1,20 +1,21 @@
 ﻿<UserControl x:Class="Lab_MVVM.View.TriggersView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Lab_MVVM.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Демонстрация триггеров"
+        <TextBlock Text="{Tr 'TriggersView.Title'}"
                    FontSize="18"
                    FontWeight="Bold"
                    Margin="0,0,0,20" />
 
-        <GroupBox Header="1. Property Trigger (Наведение мыши)"
+        <GroupBox Header="{Tr 'TriggersView.PropertyTriggerGroup'}"
                   Margin="0,0,0,10">
-            <Button Content="Наведи на меня!"
+            <Button Content="{Tr 'TriggersView.HoverButton'}"
                     Height="40"
                     Margin="10">
                 <Button.Style>
@@ -39,15 +40,15 @@
             </Button>
         </GroupBox>
 
-        <GroupBox Header="2. DataTrigger (Логика данных)"
+        <GroupBox Header="{Tr 'TriggersView.DataTriggerGroup'}"
                   Margin="0,0,0,10">
             <StackPanel Margin="10">
                 <CheckBox x:Name="AgreeCheck"
-                          Content="Я согласен с условиями" />
-                <TextBlock Text="Кнопка активна только при галочке"
+                          Content="{Tr 'TriggersView.AgreeCheckbox'}" />
+                <TextBlock Text="{Tr 'TriggersView.ButtonHint'}"
                            Margin="0,5,0,0"
                            Opacity="0.5" />
-                <Button Content="Продолжить"
+                <Button Content="{Tr 'TriggersView.ContinueButton'}"
                         Height="40">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -68,7 +69,7 @@
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="3. EventTrigger (Анимация при загрузке)">
+        <GroupBox Header="{Tr 'TriggersView.EventTriggerGroup'}">
             <Rectangle Width="50"
                        Height="50"
                        Fill="Orange"

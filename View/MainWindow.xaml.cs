@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Lab_MVVM.ViewModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,20 +17,10 @@ namespace Lab_MVVM
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainViewModel vm)
         {
             InitializeComponent();
+            DataContext = vm;
         }
-
-        private void LanguageComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (LanguageComboBox.SelectedItem is ComboBoxItem selectedItem)
-            {
-                string lang = selectedItem.Tag.ToString();
-                // Здесь в ветке loc-library мы пропишем переключение для CodinSeb
-                // CodinSeb.Localization.LocalizationProvider.Instance.CurrentLanguage = lang;
-            }
-        }
-
     }
 }

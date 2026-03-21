@@ -1,18 +1,19 @@
 ﻿<UserControl x:Class="Lab_MVVM.View.OneWayBindingView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Lab_MVVM.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Привязка OneWay (В одну сторону)"
+        <TextBlock Text="{Tr 'OneWayBindingView.Title'}"
                    FontSize="18"
                    FontWeight="Bold"
                    Foreground="DarkGreen" />
 
-        <TextBlock Text="Источник данных (Меняет переменную в C#):"
+        <TextBlock Text="{Tr 'OneWayBindingView.SourceLabel'}"
                    Margin="0,10,0,0" />
         <TextBox Text="{Binding TextOWB, UpdateSourceTrigger=PropertyChanged}"
                  Margin="0,5"
@@ -20,7 +21,7 @@
 
         <Separator Margin="0,20" />
 
-        <TextBlock Text="Приемник 1 (TextBlock):"
+        <TextBlock Text="{Tr 'OneWayBindingView.Receiver1Label'}"
                    Margin="0,10,0,0" />
         <TextBlock Text="{Binding TextOWB, Mode=OneWay}"
                    FontSize="20"
@@ -28,13 +29,13 @@
                    Background="LightYellow"
                    Padding="5" />
 
-        <TextBlock Text="Приемник 2 (TextBox + Mode=OneWay):"
+        <TextBlock Text="{Tr 'OneWayBindingView.Receiver2Label'}"
                    Margin="0,10,0,0" />
         <TextBox Text="{Binding TextOWB, Mode=OneWay}"
                  Background="MistyRose"
                  Padding="5" />
 
-        <TextBlock Text="ИНСТРУКЦИЯ ДЛЯ ПРОВЕРКИ:&#x0a;1. Пиши в верхнем поле — текст меняется везде.&#x0a;2. Попробуй удалить текст в РОЗОВОМ поле и написать там 'Привет'.&#x0a;3. Вернись в верхнее поле и допиши одну букву.&#x0a;4. Увидишь, как в розовом поле твой 'Привет' исчезнет и вернется актуальное значение из кода."
+        <TextBlock Text="{Tr 'OneWayBindingView.Instructions'}"
                    Margin="0,20"
                    Opacity="0.8"
                    TextWrapping="Wrap"

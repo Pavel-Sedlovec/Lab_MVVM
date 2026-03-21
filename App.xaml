@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Lab_MVVM"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-             StartupUri="View/MainWindow.xaml">
+             xmlns:loc="clr-namespace:CodingSeb.Localization.WPF;assembly=CodingSeb.Localization.WPF">
     <Application.Resources>
         <ResourceDictionary>
-            <!-- Добавьте стили Material Design здесь -->
             <ResourceDictionary.MergedDictionaries>
                 <materialDesign:BundledTheme BaseTheme="Light"
                                              PrimaryColor="DeepPurple"

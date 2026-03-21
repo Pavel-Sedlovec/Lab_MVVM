@@ -1,0 +1,28 @@
+{
+  "DefaultBindingView": {
+    "InputPrompt": {
+      "ru": "Введите что-нибудь:",
+      "en": "Enter something:"
+    },
+    "ResultLabel": {
+      "ru": "Результат во ViewModel:",
+      "en": "Result in ViewModel:"
+    },
+    "InstructionLabel": {
+      "ru": "Инструкция:",
+      "en": "Instructions:"
+    },
+    "Step1": {
+      "ru": "1. Начни писать текст в сером поле — красный текст НЕ МЕНЯЕТСЯ.",
+      "en": "1. Start typing in the gray field — the red text DOES NOT CHANGE."
+    },
+    "Step2": {
+      "ru": "2. Нажми клавишу Tab или кликни мышкой в любое другое место.",
+      "en": "2. Press Tab or click anywhere else."
+    },
+    "Step3": {
+      "ru": "3. Как только TextBox потерял фокус — красный текст обновился!",
+      "en": "3. As soon as the TextBox loses focus — the red text updates!"
+    }
+  }
+}

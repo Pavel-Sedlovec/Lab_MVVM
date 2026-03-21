@@ -1,0 +1,46 @@
+{
+  "MainWindow": {
+    "Title": {
+      "ru": "Главное окно",
+      "en": "Main Window"
+    },
+    "DefaultBindingTab": {
+      "ru": "Привязка по умолчанию",
+      "en": "Default Binding"
+    },
+    "TwoWayBindingTab": {
+      "ru": "Двухсторонняя привязка",
+      "en": "Two-Way Binding"
+    },
+    "OneTimeBindingTab": {
+      "ru": "Одноразовая привязка",
+      "en": "One-Time Binding"
+    },
+    "OneWayBindingTab": {
+      "ru": "Односторонняя привязка",
+      "en": "One-Way Binding"
+    },
+    "TriggersTab": {
+      "ru": "Триггеры",
+      "en": "Triggers"
+    },
+    "LanguageLabel": {
+      "ru": "Язык:",
+      "en": "Language:"
+    }
+  },
+  "OneTimeBindingView": {
+    "Title": {
+      "ru": "Привязка OneTime",
+      "en": "OneTime Binding"
+    },
+    "TextLabel": {
+      "ru": "Текст: ",
+      "en": "Text: "
+    },
+    "Description": {
+      "ru": "Этот текст загрузился один раз.",
+      "en": "This text was loaded once."
+    }
+  }
+}

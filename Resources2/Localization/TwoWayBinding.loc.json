@@ -1,0 +1,120 @@
+{
+  "MainWindow": {
+    "Title": {
+      "ru": "Главное окно",
+      "en": "Main Window"
+    },
+    "DefaultBindingTab": {
+      "ru": "Привязка по умолчанию",
+      "en": "Default Binding"
+    },
+    "TwoWayBindingTab": {
+      "ru": "Двухсторонняя привязка",
+      "en": "Two-Way Binding"
+    },
+    "OneTimeBindingTab": {
+      "ru": "Одноразовая привязка",
+      "en": "One-Time Binding"
+    },
+    "OneWayBindingTab": {
+      "ru": "Односторонняя привязка",
+      "en": "One-Way Binding"
+    },
+    "TriggersTab": {
+      "ru": "Триггеры",
+      "en": "Triggers"
+    },
+    "LanguageLabel": {
+      "ru": "Язык:",
+      "en": "Language:"
+    }
+  },
+  "OneTimeBindingView": {
+    "Title": {
+      "ru": "Привязка OneTime",
+      "en": "OneTime Binding"
+    },
+    "TextLabel": {
+      "ru": "Текст: ",
+      "en": "Text: "
+    },
+    "Description": {
+      "ru": "Этот текст загрузился один раз.",
+      "en": "This text was loaded once."
+    }
+  },
+  "OneWayBindingView": {
+    "Title": {
+      "ru": "Привязка OneWay (В одну сторону)",
+      "en": "OneWay Binding (One direction)"
+    },
+    "SourceLabel": {
+      "ru": "Источник данных (Меняет переменную в C#):",
+      "en": "Data source (Changes variable in C#):"
+    },
+    "Receiver1Label": {
+      "ru": "Приемник 1 (TextBlock):",
+      "en": "Receiver 1 (TextBlock):"
+    },
+    "Receiver2Label": {
+      "ru": "Приемник 2 (TextBox + Mode=OneWay):",
+      "en": "Receiver 2 (TextBox + Mode=OneWay):"
+    },
+    "Instructions": {
+      "ru": "ИНСТРУКЦИЯ ДЛЯ ПРОВЕРКИ:\n1. Пиши в верхнем поле — текст меняется везде.\n2. Попробуй удалить текст в РОЗОВОМ поле и написать там 'Привет'.\n3. Вернись в верхнее поле и допиши одну букву.\n4. Увидишь, как в розовом поле твой 'Привет' исчезнет и вернется актуальное значение из кода.",
+      "en": "TEST INSTRUCTIONS:\n1. Type in the top field — text changes everywhere.\n2. Try to delete text in the PINK field and type 'Hello' there.\n3. Return to the top field and add one letter.\n4. You'll see your 'Hello' disappear from the pink field and the actual value from the code return."
+    }
+  },
+  "TriggersView": {
+    "Title": {
+      "ru": "Демонстрация триггеров",
+      "en": "Triggers Demonstration"
+    },
+    "PropertyTriggerGroup": {
+      "ru": "1. Property Trigger (Наведение мыши)",
+      "en": "1. Property Trigger (Mouse Hover)"
+    },
+    "HoverButton": {
+      "ru": "Наведи на меня!",
+      "en": "Hover over me!"
+    },
+    "DataTriggerGroup": {
+      "ru": "2. DataTrigger (Логика данных)",
+      "en": "2. DataTrigger (Data Logic)"
+    },
+    "AgreeCheckbox": {
+      "ru": "Я согласен с условиями",
+      "en": "I agree to the terms"
+    },
+    "ButtonHint": {
+      "ru": "Кнопка активна только при галочке",
+      "en": "Button is active only when checked"
+    },
+    "ContinueButton": {
+      "ru": "Продолжить",
+      "en": "Continue"
+    },
+    "EventTriggerGroup": {
+      "ru": "3. EventTrigger (Анимация при загрузке)",
+      "en": "3. EventTrigger (Animation on Load)"
+    }
+  },
+  "TwoWayBindingView": {
+    "ElementToElementGroup": {
+      "ru": "Привязка Элемент-Элемент",
+      "en": "Element-Element Binding"
+    },
+    "SliderHint": {
+      "ru": "Двигай слайдер — текст меняется, пиши цифры — слайдер ползет.",
+      "en": "Move the slider — text changes, type numbers — slider moves."
+    },
+    "ViewModelGroup": {
+      "ru": "Привязка через ViewModel",
+      "en": "Binding via ViewModel"
+    },
+    "ViewModelHint": {
+      "ru": "Данные проходят через C# код (ViewModel)",
+      "en": "Data passes through C# code (ViewModel)"
+    }
+  }
+}

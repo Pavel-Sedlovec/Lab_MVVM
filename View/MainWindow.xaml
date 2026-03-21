@@ -4,37 +4,37 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_MVVM.View"
-        mc:Ignorable="d"        
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d"
+        Title="{Tr 'MainWindow.Title'}"
+        Height="450"
+        Width="800">
 
     <Grid>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <TabControl>
-            <TabItem Header="Привязка по умолчанию">
+            <TabItem Header="{Tr 'MainWindow.DefaultBindingTab'}">
                 <local:DefaultBindingView />
             </TabItem>
 
-            <TabItem Header="Двухсторонняя привязка">
+            <TabItem Header="{Tr 'MainWindow.TwoWayBindingTab'}">
                 <local:TwoWayBindingView />
             </TabItem>
 
-            <TabItem Header="Одноразовая привязка">
+            <TabItem Header="{Tr 'MainWindow.OneTimeBindingTab'}">
                 <local:OneTimeBindingView />
             </TabItem>
 
-            <TabItem Header="Односторонняя привязка">
+            <TabItem Header="{Tr 'MainWindow.OneWayBindingTab'}">
                 <local:OneWayBindingView />
             </TabItem>
 
-            <TabItem Header="Триггеры">
+            <TabItem Header="{Tr 'MainWindow.TriggersTab'}">
                 <local:TriggersView />
             </TabItem>
-
         </TabControl>
 
         <StackPanel Grid.Row="1"
@@ -42,19 +42,22 @@
                     HorizontalAlignment="Left"
                     Margin="10,5"
                     VerticalAlignment="Center">
-            <TextBlock Text="Язык:"
+            <TextBlock Text="{Tr 'MainWindow.LanguageLabel'}"
                        VerticalAlignment="Center"
                        Margin="0,0,8,0"
                        FontSize="14" />
-            <ComboBox x:Name="LanguageComboBox"
-                      Width="120"
-                      Height="30"
-                      SelectionChanged="LanguageComboBox_SelectionChanged">
-                <ComboBoxItem Content="Русский"
-                              Tag="ru" />
-                <ComboBoxItem Content="English"
-                              Tag="en" />
-            </ComboBox>
+            <Button Content="RU"
+                    Command="{Binding ChangeLanguageCommand}"
+                    CommandParameter="ru"
+                    Width="35"
+                    Height="26"
+                    Margin="4,0" />
+
+            <Button Content="EN"
+                    Command="{Binding ChangeLanguageCommand}"
+                    CommandParameter="en"
+                    Width="35"
+                    Height="26" />
         </StackPanel>
     </Grid>
 </Window>
