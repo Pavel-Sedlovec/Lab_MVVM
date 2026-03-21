@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -26,8 +27,17 @@ namespace Lab_MVVM
             if (LanguageComboBox.SelectedItem is ComboBoxItem selectedItem)
             {
                 string lang = selectedItem.Tag.ToString();
-                // Здесь в ветке loc-library мы пропишем переключение для CodinSeb
-                // CodinSeb.Localization.LocalizationProvider.Instance.CurrentLanguage = lang;
+                var culture = new CultureInfo(lang);
+
+                // 1. Меняем культуру для генератора ресурсов
+                Lab_MVVM.Resources.Culture = culture;
+
+                // 2. Меняем культуру потока (для дат, чисел и т.д.)
+                Thread.CurrentThread.CurrentUICulture = culture;
+                Thread.CurrentThread.CurrentCulture = culture;
+
+                // 3. ПИНАЕМ наш Loc, чтобы он обновил Strings в XAML
+                Lab_MVVM.Model.Loc.Instance.Update();
             }
         }
 

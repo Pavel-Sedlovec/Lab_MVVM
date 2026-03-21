@@ -7,19 +7,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Привязка OneTime"
+        <TextBlock Text="{Binding Strings.t_OT_Title, Source={StaticResource Loc}}"
                    FontSize="18"
                    FontWeight="Bold"
                    Foreground="DarkBlue" />
 
         <StackPanel Orientation="Horizontal"
                     Margin="0,10">
-            <TextBlock Text="Текст: " />
-            <TextBlock Text="{Binding TextOTB, Mode=OneTime}"
+            <TextBlock Text="{Binding Strings.t_OT_Label, Source={StaticResource Loc}}" />
+            <TextBlock Text="{Binding Strings.m_Welcome, Source={StaticResource Loc}, Mode=OneTime}"
                        FontWeight="Bold" />
         </StackPanel>
 
-        <TextBlock Text="Этот текст загрузился один раз."
+        <TextBlock Text="{Binding Strings.t_OT_Desc, Source={StaticResource Loc}}"
                    TextWrapping="Wrap"
                    Opacity="0.6"
                    FontStyle="Italic" />

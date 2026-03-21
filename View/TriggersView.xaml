@@ -7,14 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Демонстрация триггеров"
+        <TextBlock Text="{Binding Strings.t_Trig_Title, Source={StaticResource Loc}}"
                    FontSize="18"
                    FontWeight="Bold"
                    Margin="0,0,0,20" />
 
-        <GroupBox Header="1. Property Trigger (Наведение мыши)"
+        <GroupBox Header="{Binding Strings.t_Trig_PropHeader, Source={StaticResource Loc}}"
                   Margin="0,0,0,10">
-            <Button Content="Наведи на меня!"
+            <Button Content="{Binding Strings.t_Trig_ButtonHover, Source={StaticResource Loc}}"
                     Height="40"
                     Margin="10">
                 <Button.Style>
@@ -39,15 +39,15 @@
             </Button>
         </GroupBox>
 
-        <GroupBox Header="2. DataTrigger (Логика данных)"
+        <GroupBox Header="{Binding Strings.t_Trig_DataHeader, Source={StaticResource Loc}}"
                   Margin="0,0,0,10">
             <StackPanel Margin="10">
                 <CheckBox x:Name="AgreeCheck"
-                          Content="Я согласен с условиями" />
-                <TextBlock Text="Кнопка активна только при галочке"
+                          Content="{Binding Strings.t_Trig_CheckContent, Source={StaticResource Loc}}" />
+                <TextBlock Text="{Binding Strings.t_Trig_CheckDesc, Source={StaticResource Loc}}"
                            Margin="0,5,0,0"
                            Opacity="0.5" />
-                <Button Content="Продолжить"
+                <Button Content="{Binding Strings.t_Trig_Continue, Source={StaticResource Loc}}"
                         Height="40">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -68,7 +68,7 @@
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="3. EventTrigger (Анимация при загрузке)">
+        <GroupBox Header="{Binding Strings.t_Trig_EventHeader, Source={StaticResource Loc}}">
             <Rectangle Width="50"
                        Height="50"
                        Fill="Orange"

@@ -1,18 +1,22 @@
 ﻿<Application x:Class="Lab_MVVM.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Lab_MVVM"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:vm="clr-namespace:Lab_MVVM.Model"
              StartupUri="View/MainWindow.xaml">
+
     <Application.Resources>
         <ResourceDictionary>
-            <!-- Добавьте стили Material Design здесь -->
             <ResourceDictionary.MergedDictionaries>
                 <materialDesign:BundledTheme BaseTheme="Light"
                                              PrimaryColor="DeepPurple"
                                              SecondaryColor="Lime" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <x:Static Member="vm:Loc.Instance"
+                      x:Key="Loc" />
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

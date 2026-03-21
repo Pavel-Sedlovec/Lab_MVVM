@@ -59,5 +59,304 @@ namespace Lab_MVVM {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Введите что-нибудь:.
+        /// </summary>
+        public static string m_Input {
+            get {
+                return ResourceManager.GetString("m_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Инструкция:.
+        /// </summary>
+        public static string m_Instruction {
+            get {
+                return ResourceManager.GetString("m_Instruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Язык:.
+        /// </summary>
+        public static string m_LangLabel {
+            get {
+                return ResourceManager.GetString("m_LangLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Результат во ViewModel:.
+        /// </summary>
+        public static string m_ResultVM {
+            get {
+                return ResourceManager.GetString("m_ResultVM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Добро пожаловать!.
+        /// </summary>
+        public static string m_Welcome {
+            get {
+                return ResourceManager.GetString("m_Welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1. Начни писать текст в сером поле — красный текст НЕ МЕНЯЕТСЯ..
+        /// </summary>
+        public static string t_Def_Step1 {
+            get {
+                return ResourceManager.GetString("t_Def_Step1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 2. Нажми клавишу Tab или кликни мышкой в другое место..
+        /// </summary>
+        public static string t_Def_Step2 {
+            get {
+                return ResourceManager.GetString("t_Def_Step2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3. Как только фокус потерян — красный текст обновится!.
+        /// </summary>
+        public static string t_Def_Step3 {
+            get {
+                return ResourceManager.GetString("t_Def_Step3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Привязка по умолчанию.
+        /// </summary>
+        public static string t_Default {
+            get {
+                return ResourceManager.GetString("t_Default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Одноразовая привязка.
+        /// </summary>
+        public static string t_OneTime {
+            get {
+                return ResourceManager.GetString("t_OneTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Односторонняя привязка.
+        /// </summary>
+        public static string t_OneWay {
+            get {
+                return ResourceManager.GetString("t_OneWay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Этот текст загрузился один раз при старте..
+        /// </summary>
+        public static string t_OT_Desc {
+            get {
+                return ResourceManager.GetString("t_OT_Desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Текст: .
+        /// </summary>
+        public static string t_OT_Label {
+            get {
+                return ResourceManager.GetString("t_OT_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Привязка OneTime.
+        /// </summary>
+        public static string t_OT_Title {
+            get {
+                return ResourceManager.GetString("t_OT_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1. Пиши в верхнем поле — текст меняется везде.
+        ///2. Измени текст в розовом поле.
+        ///3. Допиши букву в верхнем — розовое поле сбросится на значение из кода..
+        /// </summary>
+        public static string t_OW_Instruction {
+            get {
+                return ResourceManager.GetString("t_OW_Instruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Источник данных (Меняет переменную в C#):.
+        /// </summary>
+        public static string t_OW_Source {
+            get {
+                return ResourceManager.GetString("t_OW_Source", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Приемник 1 (TextBlock):.
+        /// </summary>
+        public static string t_OW_Target1 {
+            get {
+                return ResourceManager.GetString("t_OW_Target1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Приемник 2 (TextBox + Mode=OneWay):.
+        /// </summary>
+        public static string t_OW_Target2 {
+            get {
+                return ResourceManager.GetString("t_OW_Target2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Привязка OneWay (В одну сторону).
+        /// </summary>
+        public static string t_OW_Title {
+            get {
+                return ResourceManager.GetString("t_OW_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Наведи на меня!.
+        /// </summary>
+        public static string t_Trig_ButtonHover {
+            get {
+                return ResourceManager.GetString("t_Trig_ButtonHover", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Я согласен с условиями.
+        /// </summary>
+        public static string t_Trig_CheckContent {
+            get {
+                return ResourceManager.GetString("t_Trig_CheckContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Кнопка активна только при галочке.
+        /// </summary>
+        public static string t_Trig_CheckDesc {
+            get {
+                return ResourceManager.GetString("t_Trig_CheckDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Продолжить.
+        /// </summary>
+        public static string t_Trig_Continue {
+            get {
+                return ResourceManager.GetString("t_Trig_Continue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 2. DataTrigger (Логика данных).
+        /// </summary>
+        public static string t_Trig_DataHeader {
+            get {
+                return ResourceManager.GetString("t_Trig_DataHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3. EventTrigger (Анимация).
+        /// </summary>
+        public static string t_Trig_EventHeader {
+            get {
+                return ResourceManager.GetString("t_Trig_EventHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1. Property Trigger (Наведение мыши).
+        /// </summary>
+        public static string t_Trig_PropHeader {
+            get {
+                return ResourceManager.GetString("t_Trig_PropHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Демонстрация триггеров.
+        /// </summary>
+        public static string t_Trig_Title {
+            get {
+                return ResourceManager.GetString("t_Trig_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Триггеры.
+        /// </summary>
+        public static string t_Triggers {
+            get {
+                return ResourceManager.GetString("t_Triggers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Двигай слайдер — текст меняется, пиши цифры — слайдер ползет..
+        /// </summary>
+        public static string t_TW_ElemDesc {
+            get {
+                return ResourceManager.GetString("t_TW_ElemDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Привязка Элемент-Элемент.
+        /// </summary>
+        public static string t_TW_ElemTitle {
+            get {
+                return ResourceManager.GetString("t_TW_ElemTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Данные проходят через C# код (ViewModel).
+        /// </summary>
+        public static string t_TW_VMDesc {
+            get {
+                return ResourceManager.GetString("t_TW_VMDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Привязка через ViewModel.
+        /// </summary>
+        public static string t_TW_VMTitle {
+            get {
+                return ResourceManager.GetString("t_TW_VMTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Двухсторонняя привязка.
+        /// </summary>
+        public static string t_TwoWay {
+            get {
+                return ResourceManager.GetString("t_TwoWay", resourceCulture);
+            }
+        }
     }
 }

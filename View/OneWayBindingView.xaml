@@ -7,12 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="20">
-        <TextBlock Text="Привязка OneWay (В одну сторону)"
+        <TextBlock Text="{Binding Strings.t_OW_Title, Source={StaticResource Loc}}"
                    FontSize="18"
                    FontWeight="Bold"
                    Foreground="DarkGreen" />
 
-        <TextBlock Text="Источник данных (Меняет переменную в C#):"
+        <TextBlock Text="{Binding Strings.t_OW_Source, Source={StaticResource Loc}}"
                    Margin="0,10,0,0" />
         <TextBox Text="{Binding TextOWB, UpdateSourceTrigger=PropertyChanged}"
                  Margin="0,5"
@@ -20,7 +20,7 @@
 
         <Separator Margin="0,20" />
 
-        <TextBlock Text="Приемник 1 (TextBlock):"
+        <TextBlock Text="{Binding Strings.t_OW_Target1, Source={StaticResource Loc}}"
                    Margin="0,10,0,0" />
         <TextBlock Text="{Binding TextOWB, Mode=OneWay}"
                    FontSize="20"
@@ -28,13 +28,13 @@
                    Background="LightYellow"
                    Padding="5" />
 
-        <TextBlock Text="Приемник 2 (TextBox + Mode=OneWay):"
+        <TextBlock Text="{Binding Strings.t_OW_Target2, Source={StaticResource Loc}}"
                    Margin="0,10,0,0" />
         <TextBox Text="{Binding TextOWB, Mode=OneWay}"
                  Background="MistyRose"
                  Padding="5" />
 
-        <TextBlock Text="ИНСТРУКЦИЯ ДЛЯ ПРОВЕРКИ:&#x0a;1. Пиши в верхнем поле — текст меняется везде.&#x0a;2. Попробуй удалить текст в РОЗОВОМ поле и написать там 'Привет'.&#x0a;3. Вернись в верхнее поле и допиши одну букву.&#x0a;4. Увидишь, как в розовом поле твой 'Привет' исчезнет и вернется актуальное значение из кода."
+        <TextBlock Text="{Binding Strings.t_OW_Instruction, Source={StaticResource Loc}}"
                    Margin="0,20"
                    Opacity="0.8"
                    TextWrapping="Wrap"
